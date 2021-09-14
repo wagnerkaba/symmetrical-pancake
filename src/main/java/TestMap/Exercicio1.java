@@ -105,7 +105,6 @@ public class Exercicio1 {
 
 
 
-        System.out.println("\nConfira se a lista está vazia: " + popEstados.isEmpty());
 
 
 
