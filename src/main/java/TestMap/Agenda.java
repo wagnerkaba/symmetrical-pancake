@@ -24,7 +24,7 @@ public class Agenda {
             System.out.println(integerContatosEntry.getKey() + ": " + integerContatosEntry.getValue().getNome() + " : " + integerContatosEntry.getValue().getNumero());
         }
 
-        System.out.println("\nOrganizar por numero - utilizando classe anônima");
+/*        System.out.println("\nOrganizar por numero - utilizando classe anônima");
 
 
         Set<Map.Entry<Integer, Contatos>> listaAnon = new TreeSet<>(new Comparator<>() {
@@ -41,9 +41,9 @@ public class Agenda {
             System.out.println(integerContatosEntry.getKey() + ": " + integerContatosEntry.getValue().getNome() + " : " + integerContatosEntry.getValue().getNumero());
 
 
-        }
+        }*/
 
-        System.out.println("\nOrganizar por numero - utilizando o método Comparator.comparing");
+/*        System.out.println("\nOrganizar por numero - utilizando o método Comparator.comparing");
 
 
         Set<Map.Entry<Integer, Contatos>> listaAnon1 = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contatos>, Integer>() {
@@ -54,13 +54,9 @@ public class Agenda {
         }));
 
         listaAnon1.addAll(treeMap.entrySet());
-
-        for (Map.Entry<Integer, Contatos> integerContatosEntry : listaAnon1) {
-
-            System.out.println(integerContatosEntry.getKey() + ": " + integerContatosEntry.getValue().getNome() + " : " + integerContatosEntry.getValue().getNumero());
+        listaAnon1.forEach(cont -> System.out.println(cont.getKey() + ":" + cont.getValue().getNome() + ":" + cont.getValue().getNumero()));*/
 
 
-        }
 
 
         System.out.println("\nOrganizar por numero - utilizando o método Comparator.comparing + lambda");
@@ -78,9 +74,10 @@ public class Agenda {
         Set<Map.Entry<Integer, Contatos>> listaNome = new TreeSet<>(Comparator.comparing(nome -> nome.getValue().getNome()));
         listaNome.addAll(treeMap.entrySet());
 
-        for (Map.Entry<Integer, Contatos> integerContatosEntry : listaNome) {
-            System.out.println(integerContatosEntry.getKey() + ": " + integerContatosEntry.getValue().getNome() + " : " + integerContatosEntry.getValue().getNumero());
-        }
+        listaNome.forEach(cont -> System.out.println(cont.getKey()+":"+cont.getValue().getNome()+":"+cont.getValue().getNumero()));
+
+
+
 
 
 
