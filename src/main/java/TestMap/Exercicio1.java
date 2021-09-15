@@ -16,6 +16,9 @@ public class Exercicio1 {
         System.out.println(popEstados);
 
 
+
+
+
         System.out.println("\nSubstitua a população do estado RN por : 555555");
 
         popEstados.put("RN", 555555);
