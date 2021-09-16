@@ -1,11 +1,13 @@
+TestMap/Agenda.java
+ TestMap.Agenda
+ TestMap.Agenda$1
+ TestMap.Contatos
+ TestMap.NomeComparator
 TestMap/LancadorDados.java
  TestMap.LancadorDados
 TestMap/Exercicio1.java
  TestMap.Exercicio1
  TestMap.Exercicio1$1
  TestMap.Exercicio1$2
-TestMap/Agenda.java
- TestMap.Agenda
- TestMap.Agenda$1
- TestMap.Contatos
- TestMap.NomeComparator
+TestStream/NumerosAleatorios.java
+ TestStream.NumerosAleatorios
