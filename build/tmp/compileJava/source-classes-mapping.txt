@@ -1,13 +1,25 @@
+Queue/Main.java
+ Queue.Main
+TestStream/NumerosAleatorios.java
+ TestStream.NumerosAleatorios
+TestMap/LancadorDados.java
+ TestMap.LancadorDados
+Stack/Main.java
+ Stack.Main
+TestMap/Exercicio1.java
+ TestMap.Exercicio1
+ TestMap.Exercicio1$1
+ TestMap.Exercicio1$2
 TestMap/Agenda.java
  TestMap.Agenda
  TestMap.Agenda$1
  TestMap.Contatos
  TestMap.NomeComparator
-TestMap/LancadorDados.java
- TestMap.LancadorDados
-TestMap/Exercicio1.java
- TestMap.Exercicio1
- TestMap.Exercicio1$1
- TestMap.Exercicio1$2
-TestStream/NumerosAleatorios.java
- TestStream.NumerosAleatorios
+Stack/No.java
+ Stack.No
+Stack/Pilha.java
+ Stack.Pilha
+Queue/No.java
+ Queue.No
+Queue/Fila.java
+ Queue.Fila
