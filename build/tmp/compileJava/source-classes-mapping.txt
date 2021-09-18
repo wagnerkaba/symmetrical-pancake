@@ -23,3 +23,9 @@ Queue/No.java
  Queue.No
 Queue/Fila.java
  Queue.Fila
+SinglyLinkedList/No.java
+ SinglyLinkedList.No
+SinglyLinkedList/ListaEncadeada.java
+ SinglyLinkedList.ListaEncadeada
+SinglyLinkedList/Main.java
+ SinglyLinkedList.Main
