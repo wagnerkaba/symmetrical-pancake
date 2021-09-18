@@ -1,11 +1,15 @@
-Queue/Main.java
- Queue.Main
+Queue/No.java
+ Queue.No
 TestStream/NumerosAleatorios.java
  TestStream.NumerosAleatorios
 TestMap/LancadorDados.java
  TestMap.LancadorDados
 Stack/Main.java
  Stack.Main
+Stack/Pilha.java
+ Stack.Pilha
+Queue/Main.java
+ Queue.Main
 TestMap/Exercicio1.java
  TestMap.Exercicio1
  TestMap.Exercicio1$1
@@ -17,10 +21,6 @@ TestMap/Agenda.java
  TestMap.NomeComparator
 Stack/No.java
  Stack.No
-Stack/Pilha.java
- Stack.Pilha
-Queue/No.java
- Queue.No
 Queue/Fila.java
  Queue.Fila
 SinglyLinkedList/No.java

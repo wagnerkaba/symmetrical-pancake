@@ -7,8 +7,8 @@ public class Fila<T> {
         this.refNoEntradaFila = null;
     }
 
-    public boolean isEmpty(){
-        return refNoEntradaFila == null ? true : false;
+    public boolean isNotEmpty(){
+        return refNoEntradaFila != null;
 
     }
 
@@ -19,8 +19,8 @@ public class Fila<T> {
     }
 
     public T first(){
-        if(!this.isEmpty()){
-            No primeiroNo = refNoEntradaFila;
+        if(this.isNotEmpty()){
+            No<T> primeiroNo = refNoEntradaFila;
             while (true){
                 if(primeiroNo.getRefNo() != null){
                     primeiroNo = primeiroNo.getRefNo();
@@ -28,15 +28,15 @@ public class Fila<T> {
                     break;
                 }
             }
-            return (T) primeiroNo.getObject();
+            return primeiroNo.getObject();
         }
         return null;
     }
 
     public T dequeue(){
-        if(!this.isEmpty()){
-            No primeiroNo = refNoEntradaFila;
-            No noAuxiliar = refNoEntradaFila;
+        if(this.isNotEmpty()){
+            No<T> primeiroNo = refNoEntradaFila;
+            No<T> noAuxiliar = refNoEntradaFila;
             while (true){
                 if(primeiroNo.getRefNo() != null){
                     noAuxiliar = primeiroNo;
@@ -47,37 +47,38 @@ public class Fila<T> {
                 }
 
             }
-            return (T) primeiroNo.getObject();
+            return primeiroNo.getObject();
         }
         return null;
     }
 
     @Override
     public String toString() {
-        String stringRetorno = "";
+        StringBuilder stringRetorno = new StringBuilder();
+
         No<T> noAuxiliar = refNoEntradaFila;
 
         if (refNoEntradaFila != null){
             while(true){
-                stringRetorno +="[No{objeto="+noAuxiliar.getObject()+"}]--->";
+                stringRetorno.append("[No{objeto=").append(noAuxiliar.getObject()).append("}]--->");
                 if(noAuxiliar.getRefNo()!=null){
                     noAuxiliar = noAuxiliar.getRefNo();
 
                 } else {
-                    stringRetorno += "null";
+                    stringRetorno.append("null");
                     break;
                 }
 
             }
 
         }else{
-            stringRetorno += "null";
+            stringRetorno.append("null");
 
         }
 
 
 
-        return stringRetorno;
+        return stringRetorno.toString();
     }
 }
 
