@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("A lista esta vazia? Resposta:" + minhaLista.isEmpty());
         System.out.println("Tamanho da lista:" + minhaLista.size());
-        System.out.println(minhaLista.getNo(3));
+        System.out.println(minhaLista.get(3));
 
 
 
