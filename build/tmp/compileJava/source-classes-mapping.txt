@@ -2,30 +2,36 @@ Queue/No.java
  Queue.No
 TestStream/NumerosAleatorios.java
  TestStream.NumerosAleatorios
-TestMap/LancadorDados.java
- TestMap.LancadorDados
 Stack/Main.java
  Stack.Main
-Stack/Pilha.java
- Stack.Pilha
-Queue/Main.java
- Queue.Main
+SinglyLinkedList/Main.java
+ SinglyLinkedList.Main
+DoublyLinkedList/ListaDuplamenteEncadeada.java
+ DoublyLinkedList.ListaDuplamenteEncadeada
+Stack/No.java
+ Stack.No
+SinglyLinkedList/ListaEncadeada.java
+ SinglyLinkedList.ListaEncadeada
+Queue/Fila.java
+ Queue.Fila
+TestMap/LancadorDados.java
+ TestMap.LancadorDados
+SinglyLinkedList/No.java
+ SinglyLinkedList.No
 TestMap/Exercicio1.java
  TestMap.Exercicio1
  TestMap.Exercicio1$1
  TestMap.Exercicio1$2
+DoublyLinkedList/NoDuplo.java
+ DoublyLinkedList.NoDuplo
 TestMap/Agenda.java
  TestMap.Agenda
  TestMap.Agenda$1
  TestMap.Contatos
  TestMap.NomeComparator
-Stack/No.java
- Stack.No
-Queue/Fila.java
- Queue.Fila
-SinglyLinkedList/No.java
- SinglyLinkedList.No
-SinglyLinkedList/ListaEncadeada.java
- SinglyLinkedList.ListaEncadeada
-SinglyLinkedList/Main.java
- SinglyLinkedList.Main
+Queue/Main.java
+ Queue.Main
+Stack/Pilha.java
+ Stack.Pilha
+DoublyLinkedList/Main.java
+ DoublyLinkedList.Main
