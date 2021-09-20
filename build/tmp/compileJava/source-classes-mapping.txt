@@ -6,8 +6,8 @@ Stack/Main.java
  Stack.Main
 SinglyLinkedList/Main.java
  SinglyLinkedList.Main
-DoublyLinkedList/ListaDuplamenteEncadeada.java
- DoublyLinkedList.ListaDuplamenteEncadeada
+Stack/Pilha.java
+ Stack.Pilha
 Stack/No.java
  Stack.No
 SinglyLinkedList/ListaEncadeada.java
@@ -31,7 +31,7 @@ TestMap/Agenda.java
  TestMap.NomeComparator
 Queue/Main.java
  Queue.Main
-Stack/Pilha.java
- Stack.Pilha
+DoublyLinkedList/ListaDuplamenteEncadeada.java
+ DoublyLinkedList.ListaDuplamenteEncadeada
 DoublyLinkedList/Main.java
  DoublyLinkedList.Main

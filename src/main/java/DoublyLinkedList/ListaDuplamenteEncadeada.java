@@ -59,6 +59,10 @@ public class ListaDuplamenteEncadeada <T> {
 
 
     public T get(int index){
+        if (getNo(index)==null){
+            return null;
+
+        }
         return this.getNo(index).getConteudo();
     }
 
@@ -70,10 +74,31 @@ public class ListaDuplamenteEncadeada <T> {
         return noAuxiliar;
     }
 
+    public void remove(int index){
+        if(index == 0){
+            primeiroNo = primeiroNo.getNoProximo();
+            if(primeiroNo != null){
+                primeiroNo.setNoPrevio(null);
+            }
+        }else{
+            NoDuplo<T> noAuxiliar = getNo(index);
+            if (noAuxiliar==null){
+                System.out.println("O indice " + index + " não existe!");
+                return;
+            }
+            noAuxiliar.getNoPrevio().setNoProximo(noAuxiliar.getNoProximo());
+            if(noAuxiliar != ultimoNo){
+                noAuxiliar.getNoProximo().setNoPrevio(noAuxiliar.getNoPrevio());
+            }
+        }
+        tamanhoLista--;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
-        for(int i=0;i<tamanhoLista;i++){
+        for(int i=0;i<this.size();i++){
             str.append("[").append(this.getNo(i).getConteudo()).append("]-->");
 
         }

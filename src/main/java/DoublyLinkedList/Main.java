@@ -11,11 +11,13 @@ public class Main {
 
         System.out.println(minhaLista);
 
-        System.out.println("\nMÉTODO GET PEGA O PROXIMO ITEM DA LISTA. VEJA ABAIXO:");
         System.out.println("indice 3:" + minhaLista.get(3)+"\n");
 
-        minhaLista.add(4, "teste5");
-        System.out.println(minhaLista.toStringCompleto());
+        minhaLista.add(3, "teste5");
+        System.out.println(minhaLista);
+
+
+
 
         minhaLista.add(1,"teste2novo");
 
@@ -28,6 +30,14 @@ public class Main {
         minhaLista.add(100,"teste estouro index");
 
         System.out.println(minhaLista);
+
+        System.out.println("removendo indice 1:" + minhaLista.get(1)+"\n");
+        minhaLista.remove(1);
+        System.out.println(minhaLista);
+
+        System.out.println("removendo indice 100:" + minhaLista.get(100)+"\n");
+        minhaLista.remove(100);
+        System.out.println(minhaLista.toStringCompleto());
 
 
 
