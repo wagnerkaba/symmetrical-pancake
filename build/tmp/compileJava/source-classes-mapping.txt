@@ -4,8 +4,12 @@ TestStream/NumerosAleatorios.java
  TestStream.NumerosAleatorios
 Stack/Main.java
  Stack.Main
+Queue/Main.java
+ Queue.Main
 SinglyLinkedList/Main.java
  SinglyLinkedList.Main
+DoublyLinkedList/ListaDuplamenteEncadeada.java
+ DoublyLinkedList.ListaDuplamenteEncadeada
 Stack/Pilha.java
  Stack.Pilha
 Stack/No.java
@@ -14,6 +18,8 @@ SinglyLinkedList/ListaEncadeada.java
  SinglyLinkedList.ListaEncadeada
 Queue/Fila.java
  Queue.Fila
+CircularList/No.java
+ CircularList.No
 TestMap/LancadorDados.java
  TestMap.LancadorDados
 SinglyLinkedList/No.java
@@ -29,9 +35,9 @@ TestMap/Agenda.java
  TestMap.Agenda$1
  TestMap.Contatos
  TestMap.NomeComparator
-Queue/Main.java
- Queue.Main
-DoublyLinkedList/ListaDuplamenteEncadeada.java
- DoublyLinkedList.ListaDuplamenteEncadeada
 DoublyLinkedList/Main.java
  DoublyLinkedList.Main
+CircularList/Main.java
+ CircularList.Main
+CircularList/ListaCircular.java
+ CircularList.ListaCircular

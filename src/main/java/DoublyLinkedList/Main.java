@@ -4,6 +4,8 @@ package DoublyLinkedList;
 public class Main {
     public static void main(String[] args) {
         ListaDuplamenteEncadeada<String> minhaLista = new ListaDuplamenteEncadeada<>();
+        System.out.println("Lista está vazia?" + minhaLista.isEmpty());
+
         minhaLista.add("teste1");
         minhaLista.add("teste2");
         minhaLista.add("teste3");
@@ -38,6 +40,9 @@ public class Main {
         System.out.println("removendo indice 100:" + minhaLista.get(100)+"\n");
         minhaLista.remove(100);
         System.out.println(minhaLista.toStringCompleto());
+
+        System.out.println("Lista está vazia?" + minhaLista.isEmpty());
+
 
 
 

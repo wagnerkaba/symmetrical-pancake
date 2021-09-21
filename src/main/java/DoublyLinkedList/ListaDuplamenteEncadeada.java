@@ -116,4 +116,8 @@ public class ListaDuplamenteEncadeada <T> {
         return str.toString();
     }
 
+    public boolean isEmpty(){
+        return this.tamanhoLista == 0;
+    }
+
 }
