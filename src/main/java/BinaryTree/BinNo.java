@@ -14,9 +14,7 @@ public class BinNo<T extends Comparable<T>> {
         return conteudo;
     }
 
-    public void setConteudo(T conteudo) {
-        this.conteudo = conteudo;
-    }
+
 
     public BinNo<T> getNoEsq() {
         return noEsq;

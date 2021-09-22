@@ -41,9 +41,9 @@ CircularList/Main.java
  CircularList.Main
 CircularList/ListaCircular.java
  CircularList.ListaCircular
-BinaryTree/BinNo.java
- BinaryTree.BinNo
 BinaryTree/ArvoreBinaria.java
  BinaryTree.ArvoreBinaria
 BinaryTree/Main.java
  BinaryTree.Main
+BinaryTree/BinNo.java
+ BinaryTree.BinNo
