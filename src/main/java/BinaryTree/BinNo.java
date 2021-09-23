@@ -34,9 +34,7 @@ public class BinNo<T extends Comparable<T>> {
 
     @Override
     public String toString() {
-        return "BinNo{" +
-                "conteudo=" + conteudo +
-                '}';
+        return "No{" + conteudo + '}';
     }
 }
 
