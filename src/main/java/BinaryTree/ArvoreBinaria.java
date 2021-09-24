@@ -72,14 +72,14 @@ public class ArvoreBinaria<T extends Comparable<T>> {
             BinNo<T> tempConteudo = this.raiz;
             BinNo<T> pai = null;
             BinNo<T> filho;
-            BinNo<T> temp;
+            BinNo<T> tempPai;
 
             System.out.println("\nRemovendo conteudo: " + conteudo);
 
             //-------------------------------------------------------------
             //Buscando por Nó que contenha "conteudo" recebido no parâmetro
             //
-            // atual = nó que receberá o "conteúdo
+            // tempConteudo = nó que receberá o "conteúdo
             // pai = nó que será "pai" do "atual"
             //-------------------------------------------------------------
 
@@ -107,28 +107,25 @@ public class ArvoreBinaria<T extends Comparable<T>> {
 
             if(pai == null){
 
+
                 if(tempConteudo.getNoDir() == null){
                     this.raiz = tempConteudo.getNoEsq();
                 }else if(tempConteudo.getNoEsq() == null){
                     this.raiz = tempConteudo.getNoDir();
                 }else {
-                    //-------------------------------------------------------------
-                    //JAVA FOR LOOP SYNTAX
-                    //
-                    // Statement 1 is executed (one time) before the execution of the code block.
-                    // Statement 2 defines the condition for executing the code block.
-                    // Statement 3 is executed (every time) after the code block has been executed.
-                    //-------------------------------------------------------------
 
-                    for(temp = tempConteudo, filho = tempConteudo.getNoEsq();
-                        filho.getNoDir() != null;
-                        temp = filho, filho = filho.getNoEsq()
-                    ){
-                        if(filho != tempConteudo.getNoEsq()){
-                            temp.setNoDir(filho.getNoEsq());
-                            filho.setNoEsq(raiz.getNoEsq());
-                        }
+                    tempPai = tempConteudo;
+                    filho = tempConteudo.getNoEsq();
+                    while (filho.getNoDir() != null){
+                        tempPai = filho;
+                        filho = filho.getNoDir();
                     }
+
+                    if(filho != tempConteudo.getNoEsq()){
+                        tempPai.setNoDir(filho.getNoEsq());
+                        filho.setNoEsq(raiz.getNoEsq());
+                    }
+
                     filho.setNoDir(raiz.getNoDir());
                     raiz = filho;
                 }
@@ -162,33 +159,24 @@ public class ArvoreBinaria<T extends Comparable<T>> {
             //-------------------------------------------------------------
 
             else{
-
-                //-------------------------------------------------------------
-                //JAVA FOR LOOP SYNTAX
-                //
-                // Statement 1 is executed (one time) before the execution of the code block.
-                // Statement 2 defines the condition for executing the code block.
-                // Statement 3 is executed (every time) after the code block has been executed.
-                //-------------------------------------------------------------
-                for(
-                        temp = tempConteudo, filho = tempConteudo.getNoEsq();
-                        filho.getNoDir() != null;
-                        temp = filho, filho = filho.getNoDir()
-                        //Statement 3: faz uma busca nos nós direitos do filho até que encontre
-                        // um nó direito que não tenha nó direito.
-                );
+                tempPai = tempConteudo;
+                filho = tempConteudo.getNoEsq();
+                while (filho.getNoDir() != null){
+                    tempPai = filho;
+                    filho = filho.getNoDir();
+                    }
 
                 if(filho != tempConteudo.getNoEsq()) {
-                    temp.setNoDir(filho.getNoEsq());
+                    tempPai.setNoDir(filho.getNoEsq());
                     filho.setNoEsq(tempConteudo.getNoEsq());
-                }
+                    }
 
                 filho.setNoDir(tempConteudo.getNoDir());
                 if(pai.getNoEsq() == tempConteudo){
                     pai.setNoEsq(filho);
                 }else{
                     pai.setNoDir(filho);
-                }
+                    }
             }
         }catch (NullPointerException erro){
             System.out.println("Conteudo nao encontrado. Bloco Catch");

@@ -13,6 +13,9 @@ public class Main {
         myTree.inserir(3);
         myTree.inserir(5);
         myTree.inserir(4);
+        myTree.inserir(-32);
+        myTree.inserir(7);
+        myTree.inserir(6);
 
 
         myTree.exibirPreOrdem();
@@ -20,9 +23,10 @@ public class Main {
         myTree.exibirInOrdem();
 
 
-        //myTree.remover(26);
-        //myTree.remover(389);
+        myTree.remover(26);
+        myTree.remover(389);
         myTree.remover(1);
+        myTree.remover(6);
 
 
         myTree.exibirInOrdem();
