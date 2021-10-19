@@ -4,26 +4,32 @@ TestStream/NumerosAleatorios.java
  TestStream.NumerosAleatorios
 Stack/Main.java
  Stack.Main
-Queue/Main.java
- Queue.Main
+CircularList/Main.java
+ CircularList.Main
 SinglyLinkedList/Main.java
  SinglyLinkedList.Main
+BinaryTree/Main.java
+ BinaryTree.Main
 DoublyLinkedList/ListaDuplamenteEncadeada.java
  DoublyLinkedList.ListaDuplamenteEncadeada
-Stack/Pilha.java
- Stack.Pilha
+CircularList/ListaCircular.java
+ CircularList.ListaCircular
 Stack/No.java
  Stack.No
 SinglyLinkedList/ListaEncadeada.java
  SinglyLinkedList.ListaEncadeada
 Queue/Fila.java
  Queue.Fila
+BinaryTree/BinNo.java
+ BinaryTree.BinNo
 CircularList/No.java
  CircularList.No
 TestMap/LancadorDados.java
  TestMap.LancadorDados
 SinglyLinkedList/No.java
  SinglyLinkedList.No
+BinaryTree/ArvoreBinaria.java
+ BinaryTree.ArvoreBinaria
 TestMap/Exercicio1.java
  TestMap.Exercicio1
  TestMap.Exercicio1$1
@@ -37,13 +43,9 @@ TestMap/Agenda.java
  TestMap.NomeComparator
 DoublyLinkedList/Main.java
  DoublyLinkedList.Main
-CircularList/Main.java
- CircularList.Main
-CircularList/ListaCircular.java
- CircularList.ListaCircular
-BinaryTree/BinNo.java
- BinaryTree.BinNo
-BinaryTree/ArvoreBinaria.java
- BinaryTree.ArvoreBinaria
-BinaryTree/Main.java
- BinaryTree.Main
+Desafios/Teste.java
+ Desafios.Teste
+Stack/Pilha.java
+ Stack.Pilha
+Queue/Main.java
+ Queue.Main
